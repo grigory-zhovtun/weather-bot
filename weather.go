@@ -1,16 +1,16 @@
-package wether
+package main
 
 import (
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/url"
-	"strings"
 )
 
 const (
 	host = "https://api.weather.yandex.ru/v2/forecast" // пути лучше выносить в константы, чтобы их можно было быстро поменять (при смене версии, например)
 )
+
 
 // Request метод API, обертка над функцией request
 func (api *API) Request(cityName string) (*Response, error) {
@@ -62,7 +62,7 @@ func request(token, lat, lon string) (*Response, error) {
 
 // вместо чтения файла при каждом запросе мы сохраняем все данные в map
 func coordinates(name string) (*city, error) {
-	find, ok := cities[strings.ToUpper(name)]
+	find, ok := Cities[name]
 	if !ok {
 		return nil, fmt.Errorf("%s не найден", name)
 	}
