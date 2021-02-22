@@ -4,7 +4,6 @@ import (
 	tb "gopkg.in/tucnak/telebot.v2"
 	"log"
 	"os"
-	"time"
 	"fmt"
 )
 
