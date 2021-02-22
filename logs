@@ -1,0 +1,40 @@
+2021-02-20T09:09:19.687287+00:00 app[api]: Initial release by user grigory.zhovtun@gmail.com
+2021-02-20T09:09:19.687287+00:00 app[api]: Release v1 created by user grigory.zhovtun@gmail.com
+2021-02-20T09:09:19.829286+00:00 app[api]: Enable Logplex by user grigory.zhovtun@gmail.com
+2021-02-20T09:09:19.829286+00:00 app[api]: Release v2 created by user grigory.zhovtun@gmail.com
+2021-02-20T09:14:07.507720+00:00 app[api]: Release v3 created by user grigory.zhovtun@gmail.com
+2021-02-20T09:14:07.507720+00:00 app[api]: Set BOT_TOKEN config vars by user grigory.zhovtun@gmail.com
+2021-02-20T09:14:39.673669+00:00 app[api]: Set YANDEX_TOKEN config vars by user grigory.zhovtun@gmail.com
+2021-02-20T09:14:39.673669+00:00 app[api]: Release v4 created by user grigory.zhovtun@gmail.com
+2021-02-20T09:16:51.177347+00:00 app[api]: Set PUBLIC_URL config vars by user grigory.zhovtun@gmail.com
+2021-02-20T09:16:51.177347+00:00 app[api]: Release v5 created by user grigory.zhovtun@gmail.com
+2021-02-20T09:19:29.237020+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=c30d6453-0853-492c-b9bf-b19ad9f437ff fwd="188.243.244.45" dyno= connect= service= status=502 bytes= protocol=http
+2021-02-20T09:19:29.456549+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=72537f45-e240-40b0-9b3e-6cb1684dd9d6 fwd="188.243.244.45" dyno= connect= service= status=502 bytes= protocol=http
+2021-02-20T17:39:22.699080+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=7d9c2ec5-55fb-4962-ba94-fc7bae01a983 fwd="188.243.244.45" dyno= connect= service= status=502 bytes= protocol=https
+2021-02-21T03:57:23.000000+00:00 app[api]: Build started by user grigory.zhovtun@gmail.com
+2021-02-21T03:57:47.770289+00:00 app[api]: Deploy f00d3205 by user grigory.zhovtun@gmail.com
+2021-02-21T03:57:47.770289+00:00 app[api]: Release v6 created by user grigory.zhovtun@gmail.com
+2021-02-21T03:57:47.786978+00:00 app[api]: Scaled to web@1:Free by user grigory.zhovtun@gmail.com
+2021-02-21T03:57:48.612435+00:00 heroku[web.1]: Starting process with command `currency`
+2021-02-21T03:57:50.567222+00:00 app[web.1]: bash: currency: command not found
+2021-02-21T03:57:50.612908+00:00 heroku[web.1]: Process exited with status 127
+2021-02-21T03:57:50.689897+00:00 heroku[web.1]: State changed from starting to crashed
+2021-02-21T03:57:50.692824+00:00 heroku[web.1]: State changed from crashed to starting
+2021-02-21T03:57:51.217968+00:00 heroku[web.1]: Starting process with command `currency`
+2021-02-21T03:57:53.525627+00:00 app[web.1]: bash: currency: command not found
+2021-02-21T03:57:53.609005+00:00 heroku[web.1]: Process exited with status 127
+2021-02-21T03:57:53.673851+00:00 heroku[web.1]: State changed from starting to crashed
+2021-02-21T03:58:06.000000+00:00 app[api]: Build succeeded
+2021-02-21T03:59:27.301760+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=ef7cef91-6994-4916-9cdd-2fa75ae7f0c2 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T03:59:37.648336+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=82869912-650b-4a84-9a0b-cd7a6010cdbf fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T03:59:37.892916+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=da5c97ea-e72d-4c1c-89bb-313d4507cb23 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:09:00.065390+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=d0a460aa-9bbb-4282-938a-c69f646db52c fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:09:00.362032+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=54ae0d0b-662e-423c-94d0-58847a70e764 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:12:59.142492+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/get" host=gz-weather-bot.herokuapp.com request_id=1df7b83f-f04c-4eda-879b-7e523c17dd60 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:12:59.399711+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=7f1cee8e-8d55-4af9-a3ce-60e05f428d37 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:13:06.063904+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=921901fd-6f79-49cd-8714-339ac81c589d fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:13:06.263557+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=42634f9d-12fe-4524-b302-36d73522f458 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:29:31.855049+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=gz-weather-bot.herokuapp.com request_id=42afb7a4-fa85-41e7-894a-702591d2cee0 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:29:32.083002+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=7360b324-dce6-406e-aa1d-faaa8fc2f1fc fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:29:37.159252+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/hello" host=gz-weather-bot.herokuapp.com request_id=eb26c79a-13e9-488d-bcd5-7dd21e4c2d31 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https
+2021-02-21T04:29:37.377147+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=gz-weather-bot.herokuapp.com request_id=3ad0a9a0-ef47-414c-aedd-5cce1f3462f2 fwd="188.243.244.45" dyno= connect= service= status=503 bytes= protocol=https

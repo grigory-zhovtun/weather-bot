@@ -44,7 +44,18 @@ var (
 	}
 )
 
+const (
+	webHook = "https://gz-weather-bot.herokuapp.com"
+)
+
 func main() {
+	port := os.Getenv("PORT")
+	publicURL := os.Getenv("PUBLIC_URL")
+	webhook := &tb.Webhook{
+		Listen:   ":" + port,
+		Endpoint: &tb.WebhookEndpoint{PublicURL: publicURL},
+	}
+
 	botToken := os.Getenv("BOT_TOKEN")
 	if botToken == "" {
 		log.Fatal("токен бота должен быть указан в качестве значения переменной окружения BOT_TOKEN")
@@ -54,12 +65,16 @@ func main() {
 	if yandexToken == "" {
 		log.Fatal("токен бота должен быть указан в качестве значения переменной окружения YANDEX_TOKEN")
 	}
-
-	b, err := tb.NewBot(tb.Settings{
-		URL:    "https://api.telegram.org",
+	
+	pref := tb.Settings{
 		Token:  botToken,
-		Poller: &tb.LongPoller{Timeout: 10 * time.Second},
-	})
+		Poller: webhook,
+	}
+
+	b, err := tb.NewBot(pref)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	if err != nil {
 		log.Fatal(err)
