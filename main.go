@@ -50,22 +50,16 @@ const (
 func main() {
 	port := os.Getenv("PORT")
 	publicURL := os.Getenv("PUBLIC_URL")
+	botToken := os.Getenv("BOT_TOKEN")
+	yandexToken := os.Getenv("YANDEX_TOKEN")
+
 	webhook := &tb.Webhook{
 		Listen:   ":" + port,
 		Endpoint: &tb.WebhookEndpoint{PublicURL: publicURL},
 	}
-
-	botToken := os.Getenv("BOT_TOKEN")
-	if botToken == "" {
-		log.Fatal("токен бота должен быть указан в качестве значения переменной окружения BOT_TOKEN")
-	}
-
-	yandexToken := os.Getenv("YANDEX_TOKEN")
-	if yandexToken == "" {
-		log.Fatal("токен бота должен быть указан в качестве значения переменной окружения YANDEX_TOKEN")
-	}
 	
 	pref := tb.Settings{
+		URL:    "https://api.telegram.org",
 		Token:  botToken,
 		Poller: webhook,
 	}
