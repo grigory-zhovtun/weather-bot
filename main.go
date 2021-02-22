@@ -79,7 +79,7 @@ func main() {
 	b.Handle(tb.OnText, func(m *tb.Message) {
 		city := m.Text
 		resp, _ := api.Request(city)
-		mess := fmt.Sprintf("Температура: %d Ощущается: %d\nВетер: %0.2fмс %s\n%s", resp.Fact.Temp, resp.Fact.Feels, resp.Fact.WindSpeed, windDir[resp.Fact.WindDir], conditions[resp.Fact.Condition])
+		mess := fmt.Sprintf("Температура: %d Ощущается: %d\nВетер: %0.1f мс %s\n%s", resp.Fact.Temp, resp.Fact.Feels, resp.Fact.WindSpeed, windDir[resp.Fact.WindDir], conditions[resp.Fact.Condition])
 		b.Send(m.Sender, mess)
 	})
 
